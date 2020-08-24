@@ -71,7 +71,7 @@ namespace UI.Service
 
                         var stringBuilder = new StringBuilder();
                         stringBuilder.AppendLine("#Versão: 1.0");
-                        stringBuilder.AppendLine($"#Data: {DateTime.Now.ToString("dd/MM/yyyy")}");
+                        stringBuilder.AppendLine($"#Data: {DateTime.Now.ToString("yyyy'-'MM'-'dd HH':'mm':'ss")}");
                         stringBuilder.AppendLine("#Fields: provider http-method status-code uri-path time-taken");
                         stringBuilder.AppendLine("tamanho da resposta cache-status");
 
@@ -87,7 +87,7 @@ namespace UI.Service
                             var numberFirst = item.Split('|')[0];
                             var numberTwo = item.Split('|')[2];
 
-                            var line = $"MINHA CDN {version} {number} / {text} {Math.Round(double.Parse(numberLast.Replace(".", ",")))} {numberFirst} {numberTwo}";
+                            var line = $"\"MINHA CDN\" {version} {number} / {text} {Math.Round(double.Parse(numberLast.Replace(".", ",")))} {numberFirst} {numberTwo}";
                             stringBuilder.AppendLine(line);
                         }
                         stringBuilder.AppendLine("“MINHA CDN” criará arquivos de log por meio de URLs específicos.");

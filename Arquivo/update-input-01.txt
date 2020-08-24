@@ -1,9 +1,0 @@
-#Versão: 1.0
-#Data: 23/08/2020
-#Fields: provider http-method status-code uri-path time-taken
-tamanho da resposta cache-status
-MINHA CDN GET  200 / robots.txt HTTP 100 312 HIT
-MINHA CDN POST  200 / myImages HTTP 319 101 MISS
-MINHA CDN GET  404 / not-found HTTP 143 199 MISS
-MINHA CDN GET  200 / robots.txt HTTP 245 312 INVALIDATE
-“MINHA CDN” criará arquivos de log por meio de URLs específicos.
